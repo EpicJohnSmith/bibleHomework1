@@ -13,7 +13,7 @@ public class GreatCommission
 	        // Question 1: How long to reach entire population?
 	        double multiplier = 1 + newDisciplesPerDisciple;  // 3x every 3 years per period
 	        double k = Math.log(worldPopulation / initialDisciples) / Math.log(multiplier); // AI's formula...mathematically, it makes sense.
-	        double totalYears = Math.ceil(k) * yearsPerCycle;
+	        double totalYears = Math.ceil(k) * yearsPerCycle; // is ceil a math thing? I'm a little confused by that.
 
 	        System.out.printf("1) It would take about %.0f years to reach %.1f billion people.%n",
 	                          totalYears, worldPopulation / 1_000_000_000);
